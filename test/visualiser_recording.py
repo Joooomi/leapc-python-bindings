@@ -11,7 +11,7 @@ _TRACKING_MODES = {
 
 #added code
 fourcc = cv2.VideoWriter_fourcc(*"mp4v") 
-out = cv2.VideoWriter('output.mp4', fourcc, 250.0, (700, 500))
+out = cv2.VideoWriter('output.mp4', fourcc, 250.0, (700, 500))　# (filename, fourcc, video_fps, size)
 #end
 
 class Canvas:
@@ -173,7 +173,7 @@ def main():
             fcount +=1
             if int(diff_time % 60) == 1:
                 prev_time = curr_time
-                print(f"fps = {fcount} frames/sec") # print canvas' frame rate
+                print(f"fps = {fcount} frames/sec") # print canvas fps
                 fcount = 0
 
             #end
